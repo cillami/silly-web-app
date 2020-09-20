@@ -2,14 +2,10 @@ import React, { Component } from 'react';
 import './App.css';
 
 class App extends Component {
-  constructor(...args) {
-    super(...args);
-
-    this.state = {
+    state = {
       value: '',
       lastKeyPress: '',
     };
-  }
 
   onInputChange = ({target}) => {
     const { value } = target;
